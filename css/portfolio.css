@@ -52,6 +52,16 @@
   cursor: pointer;
 }
 
+.examples:hover .explanation,
+.examples:focus .explanation {
+  opacity: 1;
+  background: rgba(33, 150, 243, 0.9);
+}
+
+.description {
+  position: relative;
+}
+
 .section-title {
   margin-top: 0;
   margin-bottom: 4px;
@@ -69,6 +79,16 @@
 }
 
 .explanation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  opacity: 0;
+  margin: 0;
+  padding: 63px 24px;
+
   color: var(--white-text-color);
   font-size: 16px;
   line-height: 1.9;
@@ -82,6 +102,7 @@
 
 /* Button */
 .button-primary {
+  padding: 6px 32px;
   color: var(--primary-text-color);
   background-color: var(--button-background-color);
   font-family: inherit;
