@@ -54,6 +54,7 @@
 
 .description {
   position: relative;
+  overflow: hidden;
 }
 
 .section-title {
