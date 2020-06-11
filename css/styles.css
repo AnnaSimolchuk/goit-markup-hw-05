@@ -5,6 +5,7 @@
   --white-text-color: #ffffff;
   --background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* цвет основного текста #212121 */
@@ -219,7 +220,7 @@
   margin-right: 10px;
 }
 
-.logo-list .icon-logo {
+.icon-logo .icon {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -228,11 +229,11 @@
   cursor: pointer;
   border-radius: 50%;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms var(--cubic);
 }
 
-.logo-list .icon-logo:hover,
-.logo-list .icon-logo:focus {
+.icon-logo .icon:hover,
+.icon-logo .icon:focus {
   --color1: var(--white-text-color);
   background-color: var(--accent);
 }
@@ -251,7 +252,7 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms var(--cubic);
 }
 
 .client-img .link-icon:hover,
